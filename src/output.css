@@ -527,6 +527,11 @@
       padding-block: calc(var(--spacing) * 40);
     }
   }
+  .md\:pt-0 {
+    @media (width >= 48rem) {
+      padding-top: calc(var(--spacing) * 0);
+    }
+  }
   .md\:pt-44 {
     @media (width >= 48rem) {
       padding-top: calc(var(--spacing) * 44);
