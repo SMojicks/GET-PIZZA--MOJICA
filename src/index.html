@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Pizza - Home</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="icon" href="../IMG/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="py-7 fixed shadow-md w-full z-50 bg-white">
+      <div class="container">
+        <!-- wrapper -->
+        <div class="flex justify-between items-center">
+          <!-- logo -->
+          <div class="items-center gap-2">
+            <img src="../IMG/LOGO.png" alt="" />
+          </div>
+          <!-- navigation -->
+          <nav class="headerNav">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+          <!-- toggle menu -->
+          <div class="toggleMenu">
+            <span></span>
+            <span></span>
+          </div>
+          <!-- transparent -->
+          <div class="transparent"></div>
+        </div>
+      </div>
+    </header>
+    <!--  intro text section -->
+    <section class="bg-white pt-43 items-center justify-center md:pt-44">
+      <div class="container">
+        <div class="flex flex-row justify-center">
+          <a class="text-primary"><i class="fa-solid fa-bullhorn"></i></a>
+          <p class="text-primary font-semibold text-center">
+            This website provides information about our store. Online
+            transactions are coming soon.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- home banner -->
+    <section class="bg-secondary/20 py-12 md:py-0">
+      <div class="container">
+        <!-- wrapper -->
+        <div class="md:grid grid-cols-2 md:justify-center md:items-center">
+          <div class="md:order-1">
+            <img src="../IMG/banner-home.png" alt="guy in a motorcycle" />
+          </div>
+          <div>
+            <h1 class="mb-5">
+              <span class="font-extrabold text-black">HUNGRY?</span> YOU'RE IN
+              THE RIGHT PLACE
+            </h1>
+            <button class="btn btn--primary">VIEW OUR MENU</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- welcome to get pizza -->
+    <section class="py-12 md:py-40">
+      <div class="container">
+        <!-- wrapper -->
+        <div class="flex flex-col gap-18 md:grid grid-cols-2">
+          <div class="relative w-70 h-55 md:w-90 md:h-60 mx-auto">
+            <img
+              class="absolute top-0 left-0 md:-top-25 w-50 h-35 md:w-90 md:h-60 object-cover rounded-2xl border-[5px] border-black shadow-lg"
+              src="../IMG/3chefs.png"
+              alt=""
+            />
+            <img
+              class="absolute -bottom-10 md:-bottom-25 right-8 md:-right-12 w-55 h-37.5 md:w-90 md:h-60 object-cover rounded-2xl border-[5px] border-black shadow-lg"
+              src="../IMG/food.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <h2>WELCOME TO GET PIZZA</h2>
+            <p class="text-primary font-bold my-5">
+              OUR CHEFS ARE WORKING 24/7 AND ARE READY TO ACCEPT VISITORS AND AT
+              ANY TIME OF THE DAY AND NIGHT
+            </p>
+            <p>
+              We would like to take this opportunity to welcome you at our Pizza
+              House. We are offering a warm, friendly atmosphere to share a meal
+              with family and friends at any time of the day or evening.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- offer -->
+    <section class="bg-tertiary   py-12 md:py-20">
+      <div class="container">
+        <h2 class="text-white my-10 text-center">
+          WE OFFER PEOPLE BEST WAY TO EAT BEST FOOD
+        </h2>
+        <div class="flex gap-3 justify-center ">
+            <img class="foodTab active size-20" id="tab-1" src="../IMG/pizzaa.png" alt="">
+            <img class="foodTab size-20" id="tab-2" src="../IMG/burger.png" alt="">
+            <img class="foodTab size-20" id="tab-3" src="../IMG/chicken.png" alt="">
+            <img class="foodTab size-20" id="tab-4" src="../IMG/drinks.png" alt="">
+            <img class="foodTab size-20" id="tab-5" src="../IMG/cake.png" alt="">
+        </div>
+        <!-- content -->
+         <div>
+            <!-- item1 pizza -->
+             <div class="foodItem active" id="tab-1-detail">
+                <div class="foodItemWrap flex justify-center gap-2">
+                    <!-- card -->
+                     <div class="foodCard">
+                        <img src="../IMG/prosciutto.png" alt="">
+                        <h6>PROSCITTO PIZZA</h6>
+                        <p>$25.00</p>
+                        <ul class="flex text-yellow-500 py-2">
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                        </ul>
+                        <button class="btn btn--tertiary">
+                            Read More
+                        </button>
+                     </div>
+                     <div class="foodCard">
+                        <img src="../IMG/prosciutto.png" alt="">
+                        <h6>BARBECUE PIZZA</h6>
+                        <p>$25.00</p>
+                        <ul class="flex text-yellow-500 py-2">
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                        </ul>
+                        <button class="btn btn--tertiary">
+                            Read More
+                        </button>
+                     </div>
+                </div>
+             </div>
+            <!-- item2 burger -->
+             <div class="foodItem" id="tab-2-detail">
+                <div class="foodItemWrap flex justify-center gap-2">
+                    <!-- card -->
+                     <div class="foodCard">
+                        <img src="../IMG/CHEESE BURGER.png" alt="">
+                        <h6>CHEESE BURGER</h6>
+                        <p>$15.00</p>
+                        <ul class="flex text-yellow-500 py-2">
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                        </ul>
+                        <button class="btn btn--tertiary">
+                            Read More
+                        </button>
+                     </div>
+                     <div class="foodCard">
+                        <img src="../IMG/CHEESE BURGER.png" alt="">
+                        <h6>CHEESE BURGER</h6>
+                        <p>$18.00</p>
+                        <ul class="flex text-yellow-500 py-2">
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                        </ul>
+                        <button class="btn btn--tertiary">
+                            Read More
+                        </button>
+                     </div>
+                </div>
+             </div>
+            <!-- item3  chicken-->
+             <div class="foodItem" id="tab-3-detail">
+                <div class="foodItemWrap flex justify-center gap-2">
+                    <!-- card -->
+                     <div class="foodCard">
+                        <img src="../IMG/CHICKEN WITH BREAD.png" alt="">
+                        <h6>FILLET WITH BREAD</h6>
+                        <p>$45.00</p>
+                        <ul class="flex text-yellow-500 py-2">
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                        </ul>
+                        <button class="btn btn--tertiary">
+                            Read More
+                        </button>
+                     </div>
+                     <div class="foodCard">
+                        <img src="../IMG/CHICKEN WITH BREAD.png" alt="">
+                        <h6>FILLET WITH BREAD</h6>
+                        <p>$58.00</p>
+                        <ul class="flex text-yellow-500 py-2">
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                        </ul>
+                        <button class="btn btn--tertiary">
+                            Read More
+                        </button>
+                     </div>
+                </div>
+             </div>
+            <!-- item4 drinks -->
+             <div class="foodItem" id="tab-4-detail">
+                <div class="foodItemWrap flex justify-center gap-2">
+                    <!-- card -->
+                     <div class="foodCard">
+                        <img src="../IMG/ORANGE DRINK.png" alt="">
+                        <h6>ORANGE DRINK</h6>
+                        <p>$10.00</p>
+                        <ul class="flex text-yellow-500 py-2">
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                        </ul>
+                        <button class="btn btn--tertiary">
+                            Read More
+                        </button>
+                     </div>
+                     <div class="foodCard">
+                        <img src="../IMG/ORANGE DRINK.png" alt="">
+                        <h6>ORANGE DRINKS</h6>
+                        <p>$12.00</p>
+                        <ul class="flex text-yellow-500 py-2">
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                        </ul>
+                        <button class="btn btn--tertiary">
+                            Read More
+                        </button>
+                     </div>
+                </div>
+             </div>
+            <!-- item5 cake-->
+             <div class="foodItem" id="tab-5-detail">
+                <div class="foodItemWrap flex justify-center gap-2">
+                    <!-- card -->
+                     <div class="foodCard">
+                        <img src="../IMG/MUFFIN-CAKE.png" alt="">
+                        <h6>MUFFIN</h6>
+                        <p>$23.00</p>
+                        <ul class="flex text-yellow-500 py-2">
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                        </ul>
+                        <button class="btn btn--tertiary">
+                            Read More
+                        </button>
+                     </div>
+                     <div class="foodCard">
+                        <img src="../IMG/MUFFIN-CAKE.png" alt="">
+                        <h6>MUFFIN</h6>
+                        <p>$20.00</p>
+                        <ul class="flex text-yellow-500 py-2">
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-star"></i></a></li>
+                        </ul>
+                        <button class="btn btn--tertiary">
+                            Read More
+                        </button>
+                     </div>
+                </div>
+             </div>
+         </div>
+      </div>
+    </section>
+
+    <!-- cta -->
+    <section class="bg-primary py-12 md:pb-0 pt-0">
+      <div class="container">
+        <!-- wrapper -->
+        <div class="md:grid md:grid-cols-2">
+          <div class="hidden md:block">
+            <img src="../IMG/chef.png" alt="picture of chef pointing" />
+          </div>
+          <div class="my-auto w-fit mx-auto md:mx-0">
+            <div class="text-center">
+              <h2 class="text-white">LET'S CONNECT</h2>
+              <p class="text-white pb-5">
+                and get a 10% off bill offers and invites
+              </p>
+              <form class="relative w-100 md:w-120 max-w-full mx-auto">
+                <input
+                  type="text"
+                  placeholder="YOUR EMAIL ADDRESS"
+                  class="bg-white h-15 w-full p-5"
+                />
+                <button class="btn btn--secondary absolute right-2 top-2.5">
+                  SUBSCRIBE
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+     <footer class="py-12 md:py-20">
+        <div class="container">
+            <img class="w-50 mx-auto"
+                src="../IMG/LOGO.png" alt="">
+            <!-- wrapper -->
+             <div class="flex flex-col gap-5 text-center my-10 md:grid md:grid-cols-3">
+                <div>
+                    <h6 class="font-extrabold text-black">ADDRESS</h6>
+                    <p>570 8th Ave, New York, NY</p>
+                    <p>10018 United States</p>
+                </div>
+                <div>
+                    <h6 class="font-extrabold text-black">BOOK A TABLE</h6>
+                    <p>Dogfood Och Sliders Foodtrucks</p>
+                    <p>Under Om Oss Kan Ni Lasa</p>
+                </div>
+                <div>
+                    <h6 class="font-extrabold text-black">OPENING HOURS</h6>
+                    <p>Monday - Friday</p>
+                    <p>10.00 AM - 11.00 PM</p>
+                </div>
+             </div>
+             <div><p class="text-primary text-center">0123456987</p></div>
+        </div>
+     </footer>
+
+    <script src="../js/toggleMenu.js"></script>
+    <script src="../js/tab.js"></script>
+  </body>
+</html>

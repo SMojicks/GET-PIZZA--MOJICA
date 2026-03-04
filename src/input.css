@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@theme {
+  --font-primary: "Poppins", sans-serif;
+  --color-primary: #b23920;
+  --color-secondary: #f7b754;
+  --color-tertiary: #223c5f;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth scroll-p-16;
+  }
+  body {
+    @apply overflow-x-hidden font-primary text-black/80 text-base bg-white;
+  }
+  .container {
+    @apply max-w-7xl w-full mx-auto px-4;
+  }
+  h1 {
+    @apply text-[clamp(3rem,6vw,4rem)] font-bold;
+  }
+  h2 {
+    @apply text-[clamp(1.5rem,5vw,2.5rem)] font-bold;
+  }
+  h3 {
+    @apply text-[clamp(1.25rem,4vw,2rem)] font-bold;
+  }
+  h4 {
+    @apply text-[clamp(1rem,3vw,1.75rem)] font-bold;
+  }
+  h5 {
+    @apply text-xl font-semibold;
+  }
+  h6 {
+    @apply text-lg font-semibold;
+  }
+}
+
+@layer components {
+ .headerNav ul {
+    @apply flex flex-col gap-5 fixed w-full top-26 text-left items-start overflow-hidden right-0 h-0 opacity-0 duration-300 
+        /* tablet-desktop */
+        md:opacity-100 md:flex-row md:items-center md:top-auto md:h-auto md:static md:shadow-none;
+  }
+    .headerNav ul.open {
+    @apply h-fit opacity-100 bg-primary shadow-md w-full  text-white top-39 px-4 pb-3 duration-300 md:shadow-none md:px-0 md:pb-0;
+  }
+  .toggleMenu span {
+    @apply block my-1 rounded-xl bg-primary items-center justify-center;
+  }
+  .toggleMenu span:first-child{
+    @apply w-10 h-1;
+  }
+   .toggleMenu span:last-child{
+    @apply w-7 h-1;
+  }
+  .toggleMenu.open span:first-child{
+    @apply w-7 h-1 duration-100;
+  }
+    .toggleMenu.open span:last-child{
+    @apply w-10 h-1 duration-100;
+  }
+  .toggleMenu{
+    @apply mx-5 md:hidden;
+  }
+  .transparent {
+    @apply hidden;
+  }
+  .transparent.open {
+    @apply block fixed h-screen w-full backdrop-blur-sm left-0 top-82 overflow-y-hidden duration-100;
+  }
+  .btn{
+    @apply inline-block px-6 py-3 rounded-lg font-medium w-auto text-center md:w-auto;
+  }
+  .btn--primary{
+    @apply bg-primary text-white;
+  }
+.btn--secondary{
+    @apply bg-secondary px-5 py-2;
+}
+.btn--tertiary{
+    @apply border border-primary
+    bg-none text-white px-5 py-2;
+}
+.foodCard{
+    @apply text-white border border-white rounded-2xl inline-block p-8 mt-10;
+}
+.foodCard, .foodCard ul{
+    @apply text-center justify-center items-center;
+}
+
+.foodCard img{
+    @apply size-30 my-5 mx-auto;
+}
+.foodTab.active{
+    @apply border-2 border-primary rounded-full p-1;
+}
+.foodItem{
+    @apply hidden lg:hidden;
+}
+.foodItem.active{
+    @apply block lg:block;
+}
+}
