@@ -72,12 +72,12 @@
 
 @layer components {
  .headerNav ul {
-    @apply flex flex-col gap-5 fixed w-full top-26 text-left items-start overflow-hidden right-0 h-0 opacity-0 duration-300 
+    @apply flex flex-col gap-5 fixed w-full top-26 text-left items-start overflow-hidden right-0 h-0 opacity-0 duration-300 font-bold
         /* tablet-desktop */
         md:opacity-100 md:flex-row md:items-center md:top-auto md:h-auto md:static md:shadow-none;
   }
     .headerNav ul.open {
-    @apply h-fit opacity-100 bg-primary shadow-md w-full  text-white top-39 px-4 pb-3 duration-300 md:shadow-none md:px-0 md:pb-0;
+    @apply h-fit opacity-100 bg-primary shadow-md w-full py-5 text-white top-28 px-4 pb-3 duration-300 md:shadow-none md:px-0 md:pb-0;
   }
   .toggleMenu span {
     @apply block my-1 rounded-xl bg-primary items-center justify-center;
@@ -101,7 +101,7 @@
     @apply hidden;
   }
   .transparent.open {
-    @apply block fixed h-screen w-full backdrop-blur-sm left-0 top-82 overflow-y-hidden duration-100;
+    @apply block fixed h-screen w-full backdrop-blur-sm left-0 top-75 overflow-y-hidden duration-100;
   }
   .btn{
     @apply inline-block px-6 py-3 rounded-lg font-medium w-auto text-center md:w-auto;
@@ -117,7 +117,7 @@
     bg-none text-white px-5 py-2;
 }
 .foodCard{
-    @apply text-white border border-white rounded-2xl inline-block p-8 mt-10;
+    @apply text-white border border-white rounded-2xl w-full max-w-120 inline-block p-8 mt-10;
 }
 .foodCard, .foodCard ul{
     @apply text-center justify-center items-center;
@@ -127,7 +127,7 @@
     @apply size-30 my-5 mx-auto;
 }
 .foodTab.active{
-    @apply border-2 border-primary rounded-full p-1;
+    @apply border-2 border-secondary rounded-full p-1 box-content;
 }
 .foodItem{
     @apply hidden lg:hidden;
