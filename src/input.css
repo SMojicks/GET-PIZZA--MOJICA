@@ -142,13 +142,35 @@
 .yearItem.active i{
   @apply rotate-180;
 }
-.menuTab .foodTab.active{
-  @apply text-primary p-0;
+
+.menu h2{
+  @apply md:text-[64px] md:text-center md:w-full;
 }
-.menu .foodItem{
+.foodTabMenu--group{
+  @apply flex justify-center gap-3 bg-secondary  text-tertiary p-5 rounded-3xl md:w-290 md:mx-auto md:justify-evenly;
+}
+.foodTabMenu--group h6{
+  @apply border-r border-white pr-3 md:text-xl md:pr-20;
+}
+.foodTabMenu--group h6:last-child{
+@apply border-none pr-0;
+}
+.foodTabMenu--category.active{
+  @apply text-primary;
+}
+.menuItemWrap .menuFoodCard img{
+  @apply size-30 my-5 mx-auto md:mx-auto md:my-10;
+}
+.menuItemWrap .menuFoodCard{
+  @apply text-center text-white md:m-5 border-0 p-0 md:border-2 md:border-white  md:p-8 md:rounded-2xl ;
+}
+.menuItemWrap .menuFoodCard ul{
+  @apply flex justify-center;
+}
+.menuItem{
   @apply hidden lg:hidden;
 }
-.menu .foodItem.active{
+.menuItem.active{
   @apply block lg:block;
 }
 }

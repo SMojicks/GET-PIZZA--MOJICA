@@ -29,7 +29,7 @@
           <nav class="headerNav">
             <ul>
               <li><a href="index.html">HOME</a></li>
-              <li><a href="#about">ABOUT</a></li>
+              <li><a href="about.html">ABOUT</a></li>
               <li><a href="menu.html">MENU</a></li>
               <li><a href="#contacts">CONTACTS</a></li>
             </ul>
@@ -65,40 +65,36 @@
         alt=""
       />
       <div
-        class="container absolute inset-0 flex h-full items-center justify-center text-center px-4"
+        class="container absolute inset-0 flex h-full justify-center items-center text-center px-4"
       >
-        <h2 class="text-white text-left">
-          ALWAYS FRESH <br />
-          & READY TO BE <br />
-          SERVED.
+        <h2 class="text-white text-left md:text-center md:w-200 w-50">
+          ALWAYS FRESH & READY TO BE SERVED.
         </h2>
       </div>
     </section>
 
-    <!-- menu tab  -->
-    <section class="py-12 md:py-20 bg-tertiary">
-        <div class="container">
+    <!-- menu tab -->
+     <section class="py-12 md:py-20 bg-tertiary">
+      <div class="container">
         <!-- wrapper -->
-        <div>
-          <!-- food category tabs -->
-          <div
-            class=" menuTab flex flex-row justify-center gap-5 text-tertiary bg-secondary rounded-3xl p-5"
-          >
-            <h6 class="foodTab active" id="tab-1">PIZZA</h6>
-            <h6 class="foodTab" id="tab-2">BURGER</h6>
-            <h6 class="foodTab" id="tab-3">CHICKEN</h6>
-            <h6 class="foodTab" id="tab-4">DRINKS</h6>
-            <h6 class="foodTab" id="tab-5">CAKE</h6>
+         <div>
+          <div class="foodTabMenu--group">
+            <h6 class="foodTabMenu--category active" id="tab-1">PIZZA</h6>
+            <h6 class="foodTabMenu--category" id="tab-2">BURGER</h6>
+            <h6 class="foodTabMenu--category" id="tab-3">CHICKEN</h6>
+            <h6 class="foodTabMenu--category" id="tab-4">DRINKS</h6>
+            <h6 class="foodTabMenu--category" id="tab-5">CAKE</h6>
           </div>
+
           <!-- content -->
-          <div class="menu">
+           <div>
             <!-- food item 1 contents -->
-            <div class="foodItem active" id="tab-1-detail">
-              <div class="foodItemWrap grid grid-cols-3">
+             <div class="menuItem active" id="tab-1-detail">
+              <div class="menuItemWrap grid grid-cols-3 md:px-40">
                 <!-- 1 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/bbq pizza.png" alt="" />
-                  <h5>BBQ PIZZA</h5>
+                 <div class="menuFoodCard">
+                  <img src="../IMG/bbq pizza.png" alt="">
+                  <h6>BBQ PIZZA</h6>
                   <p>$25.00</p>
                   <ul class="flex text-yellow-500 py-2">
                     <li>
@@ -118,11 +114,11 @@
                     </li>
                   </ul>
                   <button class="btn btn--tertiary">Read More</button>
-                </div>
+                 </div>
                 <!-- 2 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/bbq pizza.png" alt="" />
-                  <h5>BBQ PIZZA</h5>
+                 <div class="menuFoodCard">
+                  <img src="../IMG/bbq pizza.png" alt="">
+                  <h6>BBQ PIZZA</h6>
                   <p>$25.00</p>
                   <ul class="flex text-yellow-500 py-2">
                     <li>
@@ -142,11 +138,11 @@
                     </li>
                   </ul>
                   <button class="btn btn--tertiary">Read More</button>
-                </div>
+                 </div>
                 <!-- 3 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/bbq pizza.png" alt="" />
-                  <h5>BBQ PIZZA</h5>
+                 <div class="menuFoodCard">
+                  <img src="../IMG/bbq pizza.png" alt="">
+                  <h6>BBQ PIZZA</h6>
                   <p>$25.00</p>
                   <ul class="flex text-yellow-500 py-2">
                     <li>
@@ -166,11 +162,11 @@
                     </li>
                   </ul>
                   <button class="btn btn--tertiary">Read More</button>
-                </div>
+                 </div>
                 <!-- 4 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/bbq pizza.png" alt="" />
-                  <h5>BBQ PIZZA</h5>
+                 <div class="menuFoodCard">
+                  <img src="../IMG/bbq pizza.png" alt="">
+                  <h6>BBQ PIZZA</h6>
                   <p>$25.00</p>
                   <ul class="flex text-yellow-500 py-2">
                     <li>
@@ -190,11 +186,11 @@
                     </li>
                   </ul>
                   <button class="btn btn--tertiary">Read More</button>
-                </div>
+                 </div>
                 <!-- 5 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/bbq pizza.png" alt="" />
-                  <h5>BBQ PIZZA</h5>
+                 <div class="menuFoodCard">
+                  <img src="../IMG/bbq pizza.png" alt="">
+                  <h6>BBQ PIZZA</h6>
                   <p>$25.00</p>
                   <ul class="flex text-yellow-500 py-2">
                     <li>
@@ -214,11 +210,11 @@
                     </li>
                   </ul>
                   <button class="btn btn--tertiary">Read More</button>
-                </div>
+                 </div>
                 <!-- 6 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/bbq pizza.png" alt="" />
-                  <h5>BBQ PIZZA</h5>
+                 <div class="menuFoodCard">
+                  <img src="../IMG/bbq pizza.png" alt="">
+                  <h6>BBQ PIZZA</h6>
                   <p>$25.00</p>
                   <ul class="flex text-yellow-500 py-2">
                     <li>
@@ -238,168 +234,17 @@
                     </li>
                   </ul>
                   <button class="btn btn--tertiary">Read More</button>
-                </div>
+                 </div>
               </div>
-            </div>
+             </div>
             <!-- food item 2 contents -->
-            <div class="foodItem active" id="tab-2-detail">
-              <div class="foodItemWrap grid grid-cols-3">
-
-                <!-- 6 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/CHEESE BURGER.png" alt="" />
-                  <h5>CHEESE BURGER</h5>
-                  <p>$18.00</p>
-                  <ul class="flex text-yellow-500 py-2">
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                  </ul>
-                  <button class="btn btn--tertiary">Read More</button>
-                </div>
-
-                <!-- 6 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/CHEESE BURGER.png" alt="" />
-                  <h5>CHEESE BURGER</h5>
-                  <p>$18.00</p>
-                  <ul class="flex text-yellow-500 py-2">
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                  </ul>
-                  <button class="btn btn--tertiary">Read More</button>
-                </div>
-                <!-- 6 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/CHEESE BURGER.png" alt="" />
-                  <h5>CHEESE BURGER</h5>
-                  <p>$18.00</p>
-                  <ul class="flex text-yellow-500 py-2">
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                  </ul>
-                  <button class="btn btn--tertiary">Read More</button>
-                </div>
-                <!-- 6 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/CHEESE BURGER.png" alt="" />
-                  <h5>CHEESE BURGER</h5>
-                  <p>$18.00</p>
-                  <ul class="flex text-yellow-500 py-2">
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                  </ul>
-                  <button class="btn btn--tertiary">Read More</button>
-                </div>
-                <!-- 6 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/CHEESE BURGER.png" alt="" />
-                  <h5>CHEESE BURGER</h5>
-                  <p>$18.00</p>
-                  <ul class="flex text-yellow-500 py-2">
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                  </ul>
-                  <button class="btn btn--tertiary">Read More</button>
-                </div>
-                <!-- 6 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/CHEESE BURGER.png" alt="" />
-                  <h5>CHEESE BURGER</h5>
-                  <p>$18.00</p>
-                  <ul class="flex text-yellow-500 py-2">
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                  </ul>
-                  <button class="btn btn--tertiary">Read More</button>
-                </div>
-              </div>
-            </div>
-            <!-- food item 3 contents -->
-            <div class="foodItem" id="tab-3-detail">
-              <div class="foodItemWrap grid grid-cols-3">
+             <div class="menuItem" id="tab-2-detail">
+              <div class="menuItemWrap grid grid-cols-3 md:px-40">
                 <!-- 1 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/CHICKEN WITH BREAD.png" alt="" />
-                  <h5>FILLET WITH BREAD</h5>
-                  <p>$58.00</p>
+                 <div class="menuFoodCard">
+                  <img src="../IMG/CHEESE BURGER.png" alt="">
+                  <h6>CHEESE BURGER</h6>
+                  <p>$25.00</p>
                   <ul class="flex text-yellow-500 py-2">
                     <li>
                       <a href=""><i class="fa-solid fa-star"></i></a>
@@ -418,12 +263,12 @@
                     </li>
                   </ul>
                   <button class="btn btn--tertiary">Read More</button>
-                </div>
+                 </div>
                 <!-- 2 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/CHICKEN WITH BREAD.png" alt="" />
-                  <h5>FILLET WITH BREAD</h5>
-                  <p>$58.00</p>
+                 <div class="menuFoodCard">
+                  <img src="../IMG/CHEESE BURGER.png" alt="">
+                  <h6>CHEESE BURGER</h6>
+                  <p>$25.00</p>
                   <ul class="flex text-yellow-500 py-2">
                     <li>
                       <a href=""><i class="fa-solid fa-star"></i></a>
@@ -442,162 +287,12 @@
                     </li>
                   </ul>
                   <button class="btn btn--tertiary">Read More</button>
-                </div>
-                <!-- 3-->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/CHICKEN WITH BREAD.png" alt="" />
-                  <h5>FILLET WITH BREAD</h5>
-                  <p>$58.00</p>
-                  <ul class="flex text-yellow-500 py-2">
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                  </ul>
-                  <button class="btn btn--tertiary">Read More</button>
-                </div>
-                <!-- 4 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/CHICKEN WITH BREAD.png" alt="" />
-                  <h5>FILLET WITH BREAD</h5>
-                  <p>$58.00</p>
-                  <ul class="flex text-yellow-500 py-2">
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                  </ul>
-                  <button class="btn btn--tertiary">Read More</button>
-                </div>
-                <!-- 5 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/CHICKEN WITH BREAD.png" alt="" />
-                  <h5>FILLET WITH BREAD</h5>
-                  <p>$58.00</p>
-                  <ul class="flex text-yellow-500 py-2">
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                  </ul>
-                  <button class="btn btn--tertiary">Read More</button>
-                </div>
-                <!-- 6 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/CHICKEN WITH BREAD.png" alt="" />
-                  <h5>FILLET WITH BREAD</h5>
-                  <p>$58.00</p>
-                  <ul class="flex text-yellow-500 py-2">
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                  </ul>
-                  <button class="btn btn--tertiary">Read More</button>
-                </div>
-
-          </div>
-            </div>
-            <!-- food item 4 contents -->
-            <div class="foodItem" id="tab-4-detail">
-              <div class="foodItemWrap grid grid-cols-3">
-                <!-- 1 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/ORANGE DRINK.png" alt="" />
-                  <h5>BBQ PIZZA</h5>
-                  <p>$12.00</p>
-                  <ul class="flex text-yellow-500 py-2">
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                  </ul>
-                  <button class="btn btn--tertiary">Read More</button>
-                </div>
-                <!-- 2 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/ORANGE DRINK.png" alt="" />
-                  <h5>BBQ PIZZA</h5>
-                  <p>$12.00</p>
-                  <ul class="flex text-yellow-500 py-2">
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                  </ul>
-                  <button class="btn btn--tertiary">Read More</button>
-                </div>
+                 </div>
                 <!-- 3 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/ORANGE DRINK.png" alt="" />
-                  <h5>BBQ PIZZA</h5>
-                  <p>$12.00</p>
+                 <div class="menuFoodCard">
+                  <img src="../IMG/CHEESE BURGER.png" alt="">
+                  <h6>CHEESE BURGER</h6>
+                  <p>$25.00</p>
                   <ul class="flex text-yellow-500 py-2">
                     <li>
                       <a href=""><i class="fa-solid fa-star"></i></a>
@@ -616,12 +311,12 @@
                     </li>
                   </ul>
                   <button class="btn btn--tertiary">Read More</button>
-                </div>
+                 </div>
                 <!-- 4 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/ORANGE DRINK.png" alt="" />
-                  <h5>BBQ PIZZA</h5>
-                  <p>$12.00</p>
+                 <div class="menuFoodCard">
+                  <img src="../IMG/CHEESE BURGER.png" alt="">
+                  <h6>CHEESE BURGER</h6>
+                  <p>$25.00</p>
                   <ul class="flex text-yellow-500 py-2">
                     <li>
                       <a href=""><i class="fa-solid fa-star"></i></a>
@@ -640,12 +335,12 @@
                     </li>
                   </ul>
                   <button class="btn btn--tertiary">Read More</button>
-                </div>
+                 </div>
                 <!-- 5 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/ORANGE DRINK.png" alt="" />
-                  <h5>BBQ PIZZA</h5>
-                  <p>$12.00</p>
+                 <div class="menuFoodCard">
+                  <img src="../IMG/CHEESE BURGER.png" alt="">
+                  <h6>CHEESE BURGER</h6>
+                  <p>$25.00</p>
                   <ul class="flex text-yellow-500 py-2">
                     <li>
                       <a href=""><i class="fa-solid fa-star"></i></a>
@@ -664,12 +359,12 @@
                     </li>
                   </ul>
                   <button class="btn btn--tertiary">Read More</button>
-                </div>
+                 </div>
                 <!-- 6 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/ORANGE DRINK.png" alt="" />
-                  <h5>BBQ PIZZA</h5>
-                  <p>$12.00</p>
+                 <div class="menuFoodCard">
+                  <img src="../IMG/CHEESE BURGER.png" alt="">
+                  <h6>CHEESE BURGER</h6>
+                  <p>$25.00</p>
                   <ul class="flex text-yellow-500 py-2">
                     <li>
                       <a href=""><i class="fa-solid fa-star"></i></a>
@@ -688,163 +383,461 @@
                     </li>
                   </ul>
                   <button class="btn btn--tertiary">Read More</button>
-                </div>
-              </div>
-            </div>
-            <!-- food item 5 contents -->
-            <div class="foodItem" id="tab-5-detail">
-              <div class="foodItemWrap grid grid-cols-3">
-                <!-- 1 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/MUFFIN-CAKE.png" alt="" />
-                  <h5>MUFFIN CAKE</h5>
-                  <p>$20.00</p>
-                  <ul class="flex text-yellow-500 py-2">
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                  </ul>
-                  <button class="btn btn--tertiary">Read More</button>
-                </div>
-                <!-- 2 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/MUFFIN-CAKE.png" alt="" />
-                  <h5>MUFFIN CAKE</h5>
-                  <p>$20.00</p>
-                  <ul class="flex text-yellow-500 py-2">
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                  </ul>
-                  <button class="btn btn--tertiary">Read More</button>
-                </div>
-                <!-- 3 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/MUFFIN-CAKE.png" alt="" />
-                  <h5>MUFFIN CAKE</h5>
-                  <p>$20.00</p>
-                  <ul class="flex text-yellow-500 py-2">
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                  </ul>
-                  <button class="btn btn--tertiary">Read More</button>
-                </div>
-                <!-- 4 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/MUFFIN-CAKE.png" alt="" />
-                  <h5>MUFFIN CAKE</h5>
-                  <p>$20.00</p>
-                  <ul class="flex text-yellow-500 py-2">
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                  </ul>
-                  <button class="btn btn--tertiary">Read More</button>
-                </div>
-                <!-- 5 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/MUFFIN-CAKE.png" alt="" />
-                  <h5>MUFFIN CAKE</h5>
-                  <p>$20.00</p>
-                  <ul class="flex text-yellow-500 py-2">
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                  </ul>
-                  <button class="btn btn--tertiary">Read More</button>
-                </div>
-                <!-- 6 -->
-                <div class="foodCard border-none p-0">
-                  <img src="../IMG/MUFFIN-CAKE.png" alt="" />
-                  <h5>MUFFIN CAKE</h5>
-                  <p>$20.00</p>
-                  <ul class="flex text-yellow-500 py-2">
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa-solid fa-star"></i></a>
-                    </li>
-                  </ul>
-                  <button class="btn btn--tertiary">Read More</button>
-                </div>
+                 </div>
                 
               </div>
-            </div>
-        </div>
+             </div>
+             <!-- food item 3 contents -->
+              <div class="menuItem" id="tab-3-detail">
+                <div class="menuItemWrap grid grid-cols-3 md:px-40">
+                  <!-- 1 -->
+                 <div class="menuFoodCard">
+                  <img src="../IMG/CHICKEN WITH BREAD.png" alt="">
+                  <h6>FILLET WITH BREAD</h6>
+                  <p>$25.00</p>
+                  <ul class="flex text-yellow-500 py-2">
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <button class="btn btn--tertiary">Read More</button>
+                 </div>
+                  <!-- 1 -->
+                 <div class="menuFoodCard">
+                  <img src="../IMG/CHICKEN WITH BREAD.png" alt="">
+                  <h6>FILLET WITH BREAD</h6>
+                  <p>$25.00</p>
+                  <ul class="flex text-yellow-500 py-2">
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <button class="btn btn--tertiary">Read More</button>
+                 </div>
+                  <!-- 1 -->
+                 <div class="menuFoodCard">
+                  <img src="../IMG/CHICKEN WITH BREAD.png" alt="">
+                  <h6>FILLET WITH BREAD</h6>
+                  <p>$25.00</p>
+                  <ul class="flex text-yellow-500 py-2">
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <button class="btn btn--tertiary">Read More</button>
+                 </div>
+                  <!-- 1 -->
+                 <div class="menuFoodCard">
+                  <img src="../IMG/CHICKEN WITH BREAD.png" alt="">
+                  <h6>FILLET WITH BREAD</h6>
+                  <p>$25.00</p>
+                  <ul class="flex text-yellow-500 py-2">
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <button class="btn btn--tertiary">Read More</button>
+                 </div>
+                  <!-- 1 -->
+                 <div class="menuFoodCard">
+                  <img src="../IMG/CHICKEN WITH BREAD.png" alt="">
+                  <h6>FILLET WITH BREAD</h6>
+                  <p>$25.00</p>
+                  <ul class="flex text-yellow-500 py-2">
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <button class="btn btn--tertiary">Read More</button>
+                 </div>
+                  <!-- 1 -->
+                 <div class="menuFoodCard">
+                  <img src="../IMG/CHICKEN WITH BREAD.png" alt="">
+                  <h6>FILLET WITH BREAD</h6>
+                  <p>$25.00</p>
+                  <ul class="flex text-yellow-500 py-2">
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <button class="btn btn--tertiary">Read More</button>
+                 </div>
+                </div>
+              </div>
+             <!-- food item 4 contents -->
+              <div class="menuItem" id="tab-4-detail">
+                <div class="menuItemWrap grid grid-cols-3 md:px-40">
+                  <!-- 1 -->
+                 <div class="menuFoodCard">
+                  <img src="../IMG/ORANGE DRINK.png" alt="">
+                  <h6>ORANGE DRINK</h6>
+                  <p>$25.00</p>
+                  <ul class="flex text-yellow-500 py-2">
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <button class="btn btn--tertiary">Read More</button>
+                 </div>
+                  <!-- 1 -->
+                 <div class="menuFoodCard">
+                  <img src="../IMG/ORANGE DRINK.png" alt="">
+                  <h6>ORANGE DRINK</h6>
+                  <p>$25.00</p>
+                  <ul class="flex text-yellow-500 py-2">
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <button class="btn btn--tertiary">Read More</button>
+                 </div>
+                  <!-- 1 -->
+                 <div class="menuFoodCard">
+                  <img src="../IMG/ORANGE DRINK.png" alt="">
+                  <h6>ORANGE DRINK</h6>
+                  <p>$25.00</p>
+                  <ul class="flex text-yellow-500 py-2">
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <button class="btn btn--tertiary">Read More</button>
+                 </div>
+                  <!-- 1 -->
+                 <div class="menuFoodCard">
+                  <img src="../IMG/ORANGE DRINK.png" alt="">
+                  <h6>ORANGE DRINK</h6>
+                  <p>$25.00</p>
+                  <ul class="flex text-yellow-500 py-2">
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <button class="btn btn--tertiary">Read More</button>
+                 </div>
+                  <!-- 1 -->
+                 <div class="menuFoodCard">
+                  <img src="../IMG/ORANGE DRINK.png" alt="">
+                  <h6>ORANGE DRINK</h6>
+                  <p>$25.00</p>
+                  <ul class="flex text-yellow-500 py-2">
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <button class="btn btn--tertiary">Read More</button>
+                 </div>
+                  <!-- 1 -->
+                 <div class="menuFoodCard">
+                  <img src="../IMG/ORANGE DRINK.png" alt="">
+                  <h6>ORANGE DRINK</h6>
+                  <p>$25.00</p>
+                  <ul class="flex text-yellow-500 py-2">
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <button class="btn btn--tertiary">Read More</button>
+                 </div>
+                </div>
+              </div>
+             <!-- food item 5 contents -->
+              <div class="menuItem" id="tab-5-detail">
+                <div class="menuItemWrap grid grid-cols-3 md:px-40">
+                  <!-- 1 -->
+                 <div class="menuFoodCard">
+                  <img src="../IMG/MUFFIN-CAKE.png" alt="">
+                  <h6>MUFFIN CAKE</h6>
+                  <p>$25.00</p>
+                  <ul class="flex text-yellow-500 py-2">
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <button class="btn btn--tertiary">Read More</button>
+                 </div>
+                  <!-- 1 -->
+                 <div class="menuFoodCard">
+                  <img src="../IMG/MUFFIN-CAKE.png" alt="">
+                  <h6>MUFFIN CAKE</h6>
+                  <p>$25.00</p>
+                  <ul class="flex text-yellow-500 py-2">
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <button class="btn btn--tertiary">Read More</button>
+                 </div>
+                  <!-- 1 -->
+                 <div class="menuFoodCard">
+                  <img src="../IMG/MUFFIN-CAKE.png" alt="">
+                  <h6>MUFFIN CAKE</h6>
+                  <p>$25.00</p>
+                  <ul class="flex text-yellow-500 py-2">
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <button class="btn btn--tertiary">Read More</button>
+                 </div>
+                  <!-- 1 -->
+                 <div class="menuFoodCard">
+                  <img src="../IMG/MUFFIN-CAKE.png" alt="">
+                  <h6>MUFFIN CAKE</h6>
+                  <p>$25.00</p>
+                  <ul class="flex text-yellow-500 py-2">
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <button class="btn btn--tertiary">Read More</button>
+                 </div>
+                  <!-- 1 -->
+                 <div class="menuFoodCard">
+                  <img src="../IMG/MUFFIN-CAKE.png" alt="">
+                  <h6>MUFFIN CAKE</h6>
+                  <p>$25.00</p>
+                  <ul class="flex text-yellow-500 py-2">
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <button class="btn btn--tertiary">Read More</button>
+                 </div>
+                  <!-- 1 -->
+                 <div class="menuFoodCard">
+                  <img src="../IMG/MUFFIN-CAKE.png" alt="">
+                  <h6>MUFFIN CAKE</h6>
+                  <p>$25.00</p>
+                  <ul class="flex text-yellow-500 py-2">
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <button class="btn btn--tertiary">Read More</button>
+                 </div>
+                </div>
+              </div>
+           </div>
+         </div>
       </div>
-      </div>
-    </section>
+     </section>
     <!-- cta -->
     <section class="bg-primary py-12 md:pb-0 md:pt-0">
       <div class="container">
@@ -902,6 +895,6 @@
       </div>
     </footer>
     <script src="../js/toggleMenu.js"></script>
-    <script src="../js/tab.js"></script>
+    <script src="../js/menu-tab.js"></script>
   </body>
 </html>

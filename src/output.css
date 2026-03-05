@@ -364,10 +364,6 @@
     border-style: var(--tw-border-style);
     border-width: 5px;
   }
-  .border-none {
-    --tw-border-style: none;
-    border-style: none;
-  }
   .border-black {
     border-color: var(--color-black);
   }
@@ -376,9 +372,6 @@
   }
   .bg-primary {
     background-color: var(--color-primary);
-  }
-  .bg-secondary {
-    background-color: var(--color-secondary);
   }
   .bg-secondary\/20 {
     background-color: color-mix(in srgb, #f7b754 20%, transparent);
@@ -397,9 +390,6 @@
   }
   .object-left {
     object-position: left;
-  }
-  .p-0 {
-    padding: calc(var(--spacing) * 0);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -467,9 +457,6 @@
   }
   .text-primary {
     color: var(--color-primary);
-  }
-  .text-tertiary {
-    color: var(--color-tertiary);
   }
   .text-white {
     color: var(--color-white);
@@ -603,6 +590,11 @@
       padding-inline: calc(var(--spacing) * 25);
     }
   }
+  .md\:px-40 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 40);
+    }
+  }
   .md\:py-0 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 0);
@@ -641,6 +633,11 @@
   .md\:pb-0 {
     @media (width >= 48rem) {
       padding-bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:text-center {
+    @media (width >= 48rem) {
+      text-align: center;
     }
   }
   .md\:text-\[40px\] {
@@ -933,17 +930,102 @@
   .yearItem.active i {
     rotate: 180deg;
   }
-  .menuTab .foodTab.active {
-    padding: calc(var(--spacing) * 0);
+  .menu h2 {
+    @media (width >= 48rem) {
+      width: 100%;
+    }
+    @media (width >= 48rem) {
+      text-align: center;
+    }
+    @media (width >= 48rem) {
+      font-size: 64px;
+    }
+  }
+  .foodTabMenu--group {
+    display: flex;
+    justify-content: center;
+    gap: calc(var(--spacing) * 3);
+    border-radius: var(--radius-3xl);
+    background-color: var(--color-secondary);
+    padding: calc(var(--spacing) * 5);
+    color: var(--color-tertiary);
+    @media (width >= 48rem) {
+      margin-inline: auto;
+    }
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 290);
+    }
+    @media (width >= 48rem) {
+      justify-content: space-evenly;
+    }
+  }
+  .foodTabMenu--group h6 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 1px;
+    border-color: var(--color-white);
+    padding-right: calc(var(--spacing) * 3);
+    @media (width >= 48rem) {
+      padding-right: calc(var(--spacing) * 20);
+    }
+    @media (width >= 48rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .foodTabMenu--group h6:last-child {
+    --tw-border-style: none;
+    border-style: none;
+    padding-right: calc(var(--spacing) * 0);
+  }
+  .foodTabMenu--category.active {
     color: var(--color-primary);
   }
-  .menu .foodItem {
+  .menuItemWrap .menuFoodCard img {
+    margin-inline: auto;
+    margin-block: calc(var(--spacing) * 5);
+    width: calc(var(--spacing) * 30);
+    height: calc(var(--spacing) * 30);
+    @media (width >= 48rem) {
+      margin-inline: auto;
+    }
+    @media (width >= 48rem) {
+      margin-block: calc(var(--spacing) * 10);
+    }
+  }
+  .menuItemWrap .menuFoodCard {
+    border-style: var(--tw-border-style);
+    border-width: 0px;
+    padding: calc(var(--spacing) * 0);
+    text-align: center;
+    color: var(--color-white);
+    @media (width >= 48rem) {
+      margin: calc(var(--spacing) * 5);
+    }
+    @media (width >= 48rem) {
+      border-radius: var(--radius-2xl);
+    }
+    @media (width >= 48rem) {
+      border-style: var(--tw-border-style);
+      border-width: 2px;
+    }
+    @media (width >= 48rem) {
+      border-color: var(--color-white);
+    }
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 8);
+    }
+  }
+  .menuItemWrap .menuFoodCard ul {
+    display: flex;
+    justify-content: center;
+  }
+  .menuItem {
     display: none;
     @media (width >= 64rem) {
       display: none;
     }
   }
-  .menu .foodItem.active {
+  .menuItem.active {
     display: block;
     @media (width >= 64rem) {
       display: block;
