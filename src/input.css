@@ -142,5 +142,14 @@
 .yearItem.active i{
   @apply rotate-180;
 }
+.menuTab .foodTab.active{
+  @apply text-primary p-0;
+}
+.menu .foodItem{
+  @apply hidden lg:hidden;
+}
+.menu .foodItem.active{
+  @apply block lg:block;
+}
 }
 
