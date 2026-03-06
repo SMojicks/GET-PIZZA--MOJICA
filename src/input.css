@@ -109,8 +109,14 @@
   .btn--primary{
     @apply bg-primary text-white;
   }
+  .btn--primary:hover{
+    @apply bg-white text-primary border border-primary duration-100;
+  }
 .btn--secondary{
     @apply bg-secondary px-5 py-2;
+}
+.btn--secondary:hover{
+  @apply text-white;
 }
 .btn--tertiary{
     @apply border border-primary
